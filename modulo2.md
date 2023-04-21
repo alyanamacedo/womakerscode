@@ -38,4 +38,9 @@
 %git status
 %git commit -m "comentários"    -> branch master. [master (root-commit) 6eb5936] Esse número é um código gerado
 
-//GIT PUSH
+//GIT PUSH: envio para o Github
+Quando a branch é nova, não existe uma referência de-para entre os arquivos locais e virtuais, então precisa dar o comando
+%git push --set-upstream origin master
+
+//GIT PULL: baixa as alteraçòes feitas no Github
+%git pull
