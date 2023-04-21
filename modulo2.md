@@ -9,16 +9,16 @@
 [ESC] + %:wq                -> para sair do terminal
 %clear                      -> limpa tela
 
-//INIT: inicializar o diretório
+//GIT INIT: inicializar o diretório
 %git init                   -> permite que o Git monitore tudo o que tem nesse repositório
 %git status                 -> verifica as modificações num nível mais macro
 
-//REMOTE: linkando com diretório no GitHub
+//GIT REMOTE: linkando com diretório no GitHub
 - criar um diretório no GitHub      -> ele vai mostrar um comando remote add origin
 %git remote -v              -> para verificar se já existe algum diretório no GitHub atrelado
 %git remote add origin https://github.com/alyanamacedo/potencia-feminina-git-e-github.git       -> atrelar
 
-//CLONE: clonar um diretório. Copiar do github para um dir local
+//GIT CLONE: clonar um diretório. Copiar do github para um dir local
 %cd ../                     -> retornar um diretório
 %mkdir nomenovodir
 %cd nomenovodir
@@ -34,3 +34,8 @@
 %git add [caminho do arquivo]    -> arquivo específico
 
 //GIT COMMIT: de fato registrar as alterações feitas
+%git add .
+%git status
+%git commit -m "comentários"    -> branch master. [master (root-commit) 6eb5936] Esse número é um código gerado
+
+//GIT PUSH
