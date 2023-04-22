@@ -1,30 +1,78 @@
-Para instalar: https://git-scm.com/download/win
-Tutorial Windows: https://dev.to/womakerscode/tutorial-instalando-configurando-e-inicializando-o-git-no-windows-57cj
-Comandos básicos para iniciantes: https://dev.to/womakerscode/git-e-github-guia-rapido-e-comandos-basicos-para-iniciantes-4ile
+## Criando o diretório/repositório local. 
+> Pode ser direto na interface do Git ou pelo terminal no Visual Studio Code (VSC)
 
-#CONCEITOS INICIAIS
+|COMANDOS| DESCRIÇÃO |
+|--|--|
+| `mkdir [nomedodiretorio]` | criar diretório |
+| `ls` | lista o conteúdo do diretório |
+| `cd [nomedodiretorio]` | entra num diretório |
+| `code .` | se estiver pelo git, abre o VSC |
+| `git config --list` | lista as propriedades da conta |
+| [ESC] + `%:wq` | para sair do terminal |
+| `clear` | limpa a tela |
 
-Commit -> toda vez que você desejar salvar/registrar as alterações no seu projeto, você comita essas alterações
-Branch -> ramificações do repositório. Com elas, é possível que várias pessoas atuem em um mesmo projeto independentemente (ambientes: master (PRD), develop (UAT), homolog (PDT))
-Merge -> realizamos o merge para juntar alterações de duas branchs em que duas pessoas estavam atuando simultaneamente
-Clone -> pode transferir o repositório do github para o local
-Pull -> para atualizar o repositório local. É realizado um merge entre o repositório online (github) com o local
-Push -> para enviar as alterações para o repositório remoto
-Fork -> semelhante ao clone, porém só ocorre na interface gráfica do github. Depois de copiar um repositório de outra pessoa, é possível fazer pull-requests para contribuir com o conteúdo no repositório principal (cultura OpenSource)
-Pull Request -> após fazer o fork no repositório de outra pessoa, podemos resolver issues dele e fazer pull requests enviando soluções para erros e adicionando novos conteúdos. A pessoa dona do repositório irá avaliar a sua pull request e se estiver tudo ok, será mergeada no repositório master
+## GIT INIT: inicializar o diretório
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git init` | permite que o Git monitore tudo o que tem nesse repositório |
+| `git status` | verifica as modificações num nível mais macro
+ 
+## GIT REMOTE: linkando com diretório no GitHub
+> primeiro crie um diretório no GitHub -> ele vai mostrar um comando remote add origin
 
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git remote -v ` | para verificar se já existe algum diretório no GitHub atrelado |
+| `git remote add origin [enderecodiretorioonline]` | atrelar |
 
+## GIT CLONE: clonar um diretório. Copiar do github para um dir local
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `cd ../` | retornar um diretório |
+| `mkdir [nomenovodir]` |  |
+| `cd [nomenovodir]` |  |
+| `git clone [enderecodiretorioonline]` | esse endereço o github informa na criação do dir |
 
+## GIT STATUS: verifica o status dos arquivos e pastas dentro do repositório
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git status` | ...sem alterações |
+| `git add .` | depois que fizer alguma alteração local |
+| `git status` | ...com alterações |
 
-******COMANDOS GIT******
+## GIT ADD
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git add .` | adiciona todos os arquivos para a esteira de commit. Usar para adicionar novos arquivos, atualizar arquivo ou para identificar arquivos deletados |
+| `git add [caminhodoarquivo]` | arquivo específico |
+ 
+## GIT COMMIT: de fato registrar as alterações feitas
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git add .` |  |
+| `git status` |  |
+| `git commit -m "comentários"` | branch master. [master (root-commit) 6eb5936] Esse número é um código gerado |
+| `git commit add .` | atalho para adicionar todas as mudanças que você tem |
 
-//para saber a versão
-	git --version 
+## GIT PUSH: envio para o Github
+> Quando a branch é nova, não existe uma referência de-para entre os arquivos locais e virtuais, então precisa dar o comando
 
-//para configurar a conta do GitHub no computador
-	git config --global user.name "[nome]"
-	git config --global user.email "[endereco-de-email]"
-	git config --list
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git push --set-upstream origin master` |  |
 
-//para limpar a tela
-	clear
+## GIT PULL: baixa as alteraçòes feitas no Github
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git pull` |  |
+|  |  |
+
+  ### REFERÊNCIAS:
+  
+ - [Artigo] Guia rápido e Comandos básicos para iniciantes: https://dev.to/womakerscode/git-e-github-guia-rapido-e-comandos-basicos-para-iniciantes-4ile
+ - [Tutorial] git commit -am: Atualizando arquivo modificado no Git: https://dev.to/womakerscode/tutorial-git-adicionando-um-arquivo-modificado-no-git-116c
+ - [Tutorial] git commit: Enviando arquivos para o repositório Git: https://dev.to/womakerscode/tutorial-git-enviando-arquivos-para-o-repositorio-git-1k91
+ - [Tutorial] git add: Adicionando arquivos no Git: https://dev.to/womakerscode/tutorial-git-adicionando-arquivos-no-git-3a0o
+ - [Tutorial] Enviando um projeto para o repositório remoto no GitHub: https://dev.to/womakerscode/tutorial-git-enviando-um-projeto-para-o-repositorio-remoto-no-github-2p36
+ - [Tutorial] Puxando commits remotos: https://dev.to/womakerscode/tutorial-git-puxando-commits-remotos-44an
+ - [Tutorial] gitignore: Ignorando arquivos no Git: https://dev.to/womakerscode/tutorial-git-ignorando-arquivos-no-git-32m9

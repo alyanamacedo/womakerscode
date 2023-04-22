@@ -37,6 +37,7 @@
 %git add .
 %git status
 %git commit -m "comentários"    -> branch master. [master (root-commit) 6eb5936] Esse número é um código gerado
+%git commit add .-> atalho para adicionar todas as mudanças que você tem
 
 //GIT PUSH: envio para o Github
 Quando a branch é nova, não existe uma referência de-para entre os arquivos locais e virtuais, então precisa dar o comando
@@ -44,3 +45,24 @@ Quando a branch é nova, não existe uma referência de-para entre os arquivos l
 
 //GIT PULL: baixa as alteraçòes feitas no Github
 %git pull
+
+
+
+
+
+Acesse os links abaixo:
+
+    [Artigo] Guia rápido e Comandos básicos para iniciantes: https://dev.to/womakerscode/git-e-github-guia-rapido-e-comandos-basicos-para-iniciantes-4ile
+
+    [Tutorial] git commit -am: Atualizando arquivo modificado no Git: https://dev.to/womakerscode/tutorial-git-adicionando-um-arquivo-modificado-no-git-116c
+
+    [Tutorial] git commit: Enviando arquivos para o repositório Git: https://dev.to/womakerscode/tutorial-git-enviando-arquivos-para-o-repositorio-git-1k91
+
+    [Tutorial] git add: Adicionando arquivos no Git: https://dev.to/womakerscode/tutorial-git-adicionando-arquivos-no-git-3a0o
+
+    [Tutorial] Enviando um projeto para o repositório remoto no GitHub: https://dev.to/womakerscode/tutorial-git-enviando-um-projeto-para-o-repositorio-remoto-no-github-2p36
+
+    [Tutorial] Puxando commits remotos: https://dev.to/womakerscode/tutorial-git-puxando-commits-remotos-44an
+
+    [Tutorial] gitignore: Ignorando arquivos no Git: https://dev.to/womakerscode/tutorial-git-ignorando-arquivos-no-git-32m9
+
