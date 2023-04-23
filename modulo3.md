@@ -15,3 +15,7 @@
 | `git branch` | lista as branchs existentes |
 | `git checkout [nomadabranch]` | vai para a branch |
 | `git merge [nomedabranch]`| na branch que se deseja carregar as atualizações de outra branch, informar de qual branch deseja fazer o merge|
+| `git push` | não esquecer de dar o push depois do merge para atualizar no github |
+
+### REFERÊNCIA
+- [Tutorial] O que são branches (ramos) no Git?: https://dev.to/womakerscode/tutorial-git-o-que-sao-branches-ramos-no-git-57pn
