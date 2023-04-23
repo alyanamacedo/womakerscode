@@ -12,3 +12,5 @@
 |COMANDOS| DESCRIÇÃO |
 |--|--|
 | `git checkout -b [nomebranch` | cria nova branch e já faz o switch |
+| `git branch` | lista as branchs existentes |
+| `git checkout [nomadabranch]` | vai para a branch |
