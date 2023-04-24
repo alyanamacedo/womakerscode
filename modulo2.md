@@ -17,21 +17,21 @@
 | `git init` | permite que o Git monitore tudo o que tem nesse repositório |
 | `git status` | verifica as modificações num nível mais macro
  
-## GIT REMOTE: linkando com diretório no GitHub
-> primeiro crie um diretório no GitHub -> ele vai mostrar um comando remote add origin
-
+## GIT REMOTE: linkando o diretório local com um diretório no GitHub
+> primeiro crie um diretório no GitHub -> ele vai mostrar um comando remote add origin https://github.com/alyanamacedo/[nomedorepositório].git
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git remote -v ` | para verificar se já existe algum diretório no GitHub atrelado |
 | `git remote add origin [enderecodiretorioonline]` | atrelar |
 
 ## GIT CLONE: clonar um diretório. Copiar do github para um dir local
+> usar quando não se tem ainda um diretório local criado
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `cd ../` | retornar um diretório |
 | `mkdir [nomenovodir]` |  |
 | `cd [nomenovodir]` |  |
-| `git clone [enderecodiretorioonline]` | esse endereço o github informa na criação do dir |
+| `git clone [enderecodiretorioonline]` | esse endereço o github informa na criação do dir https://github.com/alyanamacedo/[nomedorepositório] |
 
 ## GIT STATUS: verifica o status dos arquivos e pastas dentro do repositório
 | COMANDOS | DESCRIÇÃO |
