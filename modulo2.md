@@ -19,6 +19,7 @@
  
 ## GIT REMOTE: linkando o diretório local com um diretório no GitHub
 > primeiro crie um diretório no GitHub -> ele vai mostrar um comando remote add origin https://github.com/alyanamacedo/[nomedorepositório].git
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git remote -v ` | para verificar se já existe algum diretório no GitHub atrelado |
@@ -26,6 +27,7 @@
 
 ## GIT CLONE: clonar um diretório. Copiar do github para um dir local
 > usar quando não se tem ainda um diretório local criado
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `cd ../` | retornar um diretório |
