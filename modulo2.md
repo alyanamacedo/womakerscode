@@ -55,16 +55,15 @@
 | `git commit add .` | atalho para adicionar todas as mudanças que você tem |
 
 ## GIT PUSH: envio para o Github
-> Quando a branch é nova, não existe uma referência de-para entre os arquivos locais e virtuais, então precisa dar o comando
-
 | COMANDOS | DESCRIÇÃO |
 |--|--|
-| `git push --set-upstream origin master` |  |
+| `git push --set-upstream origin master` | Quando a branch é nova, não existe uma referência de-para entre os arquivos locais e virtuais, então precisa dar esse comando |
+| `git push` | para enviar do local para o github |
 
 ## GIT PULL: baixa as alteraçòes feitas no Github
 | COMANDOS | DESCRIÇÃO |
 |--|--|
-| `git pull` |  |
+| `git pull` | para baixar do github para o local |
 |  |  |
 
   ### REFERÊNCIAS:
