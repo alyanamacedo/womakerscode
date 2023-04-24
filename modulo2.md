@@ -46,6 +46,7 @@
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git add .` | adiciona todos os arquivos para a esteira de commit. Usar para adicionar novos arquivos, atualizar arquivo ou para identificar arquivos deletados |
+| `git add --all` | similar a `git add .`|
 | `git add [caminhodoarquivo]` | arquivo específico |
  
 ## GIT COMMIT: de fato registrar as alterações feitas
@@ -54,7 +55,8 @@
 | `git add .` |  |
 | `git status` |  |
 | `git commit -m "comentários"` | branch master. [master (root-commit) 6eb5936] Esse número é um código gerado |
-| `git commit add .` | atalho para adicionar todas as mudanças que você tem |
+| `git commit -a` | não precisa entrar com comentários |
+| `git commit add .` | atalho para adicionar todas as mudanças. NÃO FUNCIONOU! |
 
 ## GIT PUSH: envio para o Github
 | COMANDOS | DESCRIÇÃO |
