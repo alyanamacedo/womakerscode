@@ -1,0 +1,138 @@
+/*ícones -> iconmonstr.com*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+    --color0: white;
+    --color1: red;
+    --color2: black;
+}
+
+.background_right{
+    height: 100vh;
+    width: 45vw;
+    float: right;
+    background-color: var(--color1);
+}
+.background_right_img{
+    height: 100%;
+    width: 100%;
+    background: url(/womakerscode/projetoFinal/images/perfil.jpg) #000000 no-repeat center fixed;
+    background-size: cover;
+    filter: grayscale(100%) opacity(15%);
+}
+
+main{
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+    height: 70vh;
+    width: 80vw;
+    background-color: var(--color0);
+}
+.main_background{
+    height: 100%;
+    width: 35%;
+    background-color: var(--color2);
+}
+.main_background::after{
+    content: "";
+    position: absolute;
+    left: 15%;
+    height: 100%;
+    width: 40%;
+    background-color: var(--color2);
+    transform: skew(25deg);
+    /*transform-origin: top left;*/
+}
+.main_content{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+/*NAV*/
+nav{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 1.2em;
+}
+nav a {
+    display: block; /*precisa pois o <a> é inline por default*/
+    text-decoration: none;
+    color: #444;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 40px;
+    transition: 0.3s background-color;
+  }
+nav a.active {
+    background-color: #282e34;
+    color: #fff;
+    cursor: default;
+}
+nav a:hover {
+    background-color: #005f5f;
+    color: #fff;
+}
+nav div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div img{
+    height: 400px;
+}
+
+/*SECTION*/
+section{
+    height: 100%;
+    width: 50%;
+}
+.section_content{
+    height: 100%;
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.section_content h1{
+    font-size: 5em;
+    font-family: 'Poiret One', cursive;
+    line-height: 0.8em;
+}
+.section_content h6{
+    font-size: 1em;
+    font-family: 'Poiret One', cursive;
+    align-self: flex-end;
+    margin: 10px 0 30px 0;
+}
+.section_content a {
+    height: 60px;
+    width: 200px;
+    line-height: 60px;
+    text-align: center;
+    align-self: flex-start;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    margin: 30px 0 0 0;
+  }
