@@ -1,4 +1,7 @@
-# WoMakersCode-git-e-github
-Repositório do curso Git e GitHub - WoMakersCode
+# WoMakersCode
+Repositório dos cursos:
+- HTML e CSS
+- Javascript
+- Git e GitHub
 
 ## Notas de aula do Projeto WoMakersCode
