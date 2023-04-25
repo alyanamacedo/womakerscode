@@ -6,9 +6,13 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
 
-    --colorWhite: rgb(240, 240, 240);
+    --colorWhite: #F0F0F0;
+    --colorLightRed: #E38482;
     --colorRed: #BF302C;
     --colorBlack: #200B0D;
+}
+body{
+    background-color: var(--colorWhite);
 }
 
 .background_right{
@@ -83,22 +87,25 @@ section{
     top: 1px;
     background-color: var(--colorRed);
 }
+h1, h2, h3{
+    font-family: 'Poiret One', cursive;
+}
 .section_content_name h1{
     font-size: 6em;
-    font-family: 'Poiret One', cursive;
     line-height: 0.9em;
     letter-spacing: 4px;
 }
 .section_content_name h2{
     font-size: 2.5em;
-    font-family: 'Poiret One', cursive;
 }
-.section_content h6{
+.section_content h3{
     font-size: 1em;
     font-weight: 100;
-    font-family: 'Poiret One', cursive;
     align-self: flex-end;
     margin: 10px 0 30px 0;
+}
+.section_content p{
+    line-height: 1.2em;
 }
 .section_content a {
     height: 60px;
@@ -107,11 +114,12 @@ section{
     line-height: 60px;
     text-align: center;
     font-weight: 600;
+    letter-spacing: .1em;
     color:  var(--colorRed);
     border: 2px solid var(--colorRed);
     text-decoration: none;
     margin: 30px 0 0 0;
-    transition: 0.3s background-color, 0.3s color, 0.3s font-size;
+    transition: 0.2s background-color, 0.2s color, 0.2s font-size;
 }
 .section_content a:hover{
     background-color: var(--colorRed);
@@ -163,4 +171,6 @@ nav div{
 }
 nav div img{
     height: 400px;
+    width: 400px;
+    object-fit: cover;
 }
