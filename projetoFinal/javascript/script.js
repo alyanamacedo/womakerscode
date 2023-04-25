@@ -1,10 +1,11 @@
+//Botão ativo no menu
+const links = document.querySelectorAll(".btn");
 
-// Active class to the menu button (highlight it)
-var btns = document.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace("active", "");
-    this.className += " active";
+links.forEach(function(link) {
+  link.addEventListener("click", function() {
+    links.forEach(function(link) {
+      link.classList.remove("active");
+    });
+    this.classList.add("active");
   });
-}
+});

@@ -4,24 +4,25 @@
     margin: 0;
     font-family: 'Poiret One', cursive;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
 
-    --color0: white;
-    --color1: red;
-    --color2: black;
+    --colorWhite: rgb(240, 240, 240);
+    --colorRed: #BF302C;
+    --colorBlack: #200B0D;
 }
 
 .background_right{
     height: 100vh;
     width: 45vw;
     float: right;
-    background-color: var(--color1);
+    background-color: var(--colorRed);
 }
 .background_right_img{
     height: 100%;
     width: 100%;
-    background: url(/womakerscode/projetoFinal/images/perfil.jpg) #000000 no-repeat center fixed;
-    background-size: cover;
-    filter: grayscale(100%) opacity(15%);
+    background: url(/womakerscode/projetoFinal/images/Ativo2.png) no-repeat right fixed;
+    background-size: contain;
+    filter: opacity(20%);
 }
 
 main{
@@ -30,12 +31,12 @@ main{
     left: 10vw;
     height: 70vh;
     width: 80vw;
-    background-color: var(--color0);
+    background-color: var(--colorWhite);
 }
 .main_background{
     height: 100%;
     width: 35%;
-    background-color: var(--color2);
+    background-color: var(--colorBlack);
 }
 .main_background::after{
     content: "";
@@ -43,7 +44,7 @@ main{
     left: 15%;
     height: 100%;
     width: 40%;
-    background-color: var(--color2);
+    background-color: var(--colorBlack);
     transform: skew(25deg);
     /*transform-origin: top left;*/
 }
@@ -55,6 +56,70 @@ main{
     height: 100%;
     width: 100%;
 }
+
+/*SECTION*/
+section{
+    height: 100%;
+    width: 50%;
+}
+.section_content{
+    height: 100%;
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.section_content div{
+    align-self: flex-start;
+    display: inline-block;
+}
+.section_content_bar{
+    height: 7.5em;
+    width: 0.4em;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+    background-color: var(--colorRed);
+}
+.section_content_name h1{
+    font-size: 6em;
+    font-family: 'Poiret One', cursive;
+    line-height: 0.9em;
+    letter-spacing: 4px;
+}
+.section_content_name h2{
+    font-size: 2.5em;
+    font-family: 'Poiret One', cursive;
+}
+.section_content h6{
+    font-size: 1em;
+    font-weight: 100;
+    font-family: 'Poiret One', cursive;
+    align-self: flex-end;
+    margin: 10px 0 30px 0;
+}
+.section_content a {
+    height: 60px;
+    width: 200px;
+    align-self: flex-start;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 600;
+    color:  var(--colorRed);
+    border: 2px solid var(--colorRed);
+    text-decoration: none;
+    margin: 30px 0 0 0;
+    transition: 0.3s background-color, 0.3s color, 0.3s font-size;
+}
+.section_content a:hover{
+    background-color: var(--colorRed);
+    border: 2px solid var(--colorRed);
+    color: var(--colorWhite);
+    font-size: 1.1em;
+}
+
 /*NAV*/
 nav{
     height: 100%;
@@ -74,20 +139,20 @@ nav ul {
 nav a {
     display: block; /*precisa pois o <a> é inline por default*/
     text-decoration: none;
-    color: #444;
+    color: var(--color2);
     height: 80px;
     line-height: 80px;
     padding: 0 40px;
-    transition: 0.3s background-color;
+    transition: 0.3s background-color, 0.3s color;
   }
 nav a.active {
-    background-color: #282e34;
-    color: #fff;
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
     cursor: default;
 }
 nav a:hover {
-    background-color: #005f5f;
-    color: #fff;
+    background-color: var(--colorRed);
+    color: var(--colorWhite);
 }
 nav div{
     height: 100%;
@@ -99,40 +164,3 @@ nav div{
 nav div img{
     height: 400px;
 }
-
-/*SECTION*/
-section{
-    height: 100%;
-    width: 50%;
-}
-.section_content{
-    height: 100%;
-    margin: 0 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-.section_content h1{
-    font-size: 5em;
-    font-family: 'Poiret One', cursive;
-    line-height: 0.8em;
-}
-.section_content h6{
-    font-size: 1em;
-    font-family: 'Poiret One', cursive;
-    align-self: flex-end;
-    margin: 10px 0 30px 0;
-}
-.section_content a {
-    height: 60px;
-    width: 200px;
-    line-height: 60px;
-    text-align: center;
-    align-self: flex-start;
-    color: #fff;
-    border: 2px solid #fff;
-    text-decoration: none;
-    margin: 30px 0 0 0;
-  }
