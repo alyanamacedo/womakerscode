@@ -1,15 +1,21 @@
-/*ícones -> iconmonstr.com*/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Poiret One', cursive;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-
+/*
+ícones -> iconmonstr.com , https://icons8.com/
+Acessibilidade: https://dequeuniversity.com/rules/axe/4.6/color-contrast
+*/
+:root{
     --colorWhite: #F0F0F0;
     --colorLightRed: #E38482;
     --colorRed: #BF302C;
     --colorBlack: #200B0D;
+    --fontBody: 'Montserrat', sans-serif;
+    --fontTitle: 'Poiret One', cursive;
+}
+*{
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    font-family: var(--fontBody);
+    font-size: 1em;
 }
 body{
     background-color: var(--colorWhite);
@@ -88,7 +94,7 @@ section{
     background-color: var(--colorRed);
 }
 h1, h2, h3{
-    font-family: 'Poiret One', cursive;
+    font-family: var(--fontTitle);
 }
 .section_content_name h1{
     font-size: 6em;
@@ -148,19 +154,18 @@ nav a {
     display: block; /*precisa pois o <a> é inline por default*/
     text-decoration: none;
     color: var(--color2);
-    height: 80px;
-    line-height: 80px;
-    padding: 0 40px;
-    transition: 0.3s background-color, 0.3s color;
-  }
+    height: 50px;
+    line-height: 50px;
+    margin: 15px 40px;
+    transition: 0.3s border-bottom, 0.3s color;
+}
 nav a.active {
-    background-color: var(--colorBlack);
-    color: var(--colorWhite);
+    border-bottom: 4px solid var(--colorBlack);
     cursor: default;
 }
 nav a:hover {
-    background-color: var(--colorRed);
-    color: var(--colorWhite);
+    color: var(--colorRed);
+    border-bottom: 4px solid var(--colorRed);
 }
 nav div{
     height: 100%;
