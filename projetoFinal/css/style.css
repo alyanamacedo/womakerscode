@@ -153,19 +153,20 @@ nav ul {
 nav a {
     display: block; /*precisa pois o <a> é inline por default*/
     text-decoration: none;
-    color: var(--color2);
-    height: 50px;
-    line-height: 50px;
-    margin: 15px 40px;
-    transition: 0.3s border-bottom, 0.3s color;
+    color: var(--colorBlack);
+    height: 80px;
+    line-height: 80px;
+    padding: 0 40px;
+    transition: 0.3s background-color, 0.3s color;
 }
 nav a.active {
-    border-bottom: 4px solid var(--colorBlack);
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
     cursor: default;
 }
 nav a:hover {
-    color: var(--colorRed);
-    border-bottom: 4px solid var(--colorRed);
+    background-color: var(--colorRed);
+    color: var(--colorWhite);
 }
 nav div{
     height: 100%;
