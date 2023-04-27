@@ -18,13 +18,24 @@
 | `git init` | permite que o Git monitore tudo o que tem nesse repositório |
 | `git status` | verifica as modificações num nível mais macro
  
-## GIT REMOTE: linkando o diretório local com um diretório no GitHub
-> primeiro crie um diretório no GitHub -> ele vai mostrar um comando remote add origin https://github.com/alyanamacedo/[nomedorepositório].git
+## GIT REMOTE: linkando o diretório local com um diretório no GitHub novo
+> primeiro crie um diretório no GitHub -> ele vai mostrar um comando remote add origin https://github.com/[nomedousuário]/[nomedorepositório]
+> esse link é a referência [enderecodiretorioonline]
 
 | COMANDOS | DESCRIÇÃO |
 |--|--|
+| `git init` | permite que o Git monitore tudo o que tem nesse repositório |
+| `git status` | verifica as modificações num nível mais macro
+| | |
+| `git add .`| adicione os arquivos do repositório local na fila do commit |
+| `git commit -m "[comentários]"` | confirme as alterações localmente |
+| | |
 | `git remote -v ` | para verificar se já existe algum diretório no GitHub atrelado |
-| `git remote add origin [enderecodiretorioonline]` | atrelar |
+| `git remote add origin [enderecodiretorioonline]` | atrelar o diretório local a origem especificada no github |
+| `git remote set-url origin [enderecodiretorioonline]` | se por acaso digitou o endereço errado, use esse comando para alterar a origem |
+| | |
+| `git push --set-upstream origin master` | depois de dar o commit e definir a origem é hora de subir os arquivos para o github. Se for a primeira vez precisa definir o upstream origin [nomedabranch] |
+| `git pull origin master --allow-unrelated-histories` | se houver algum arquivo no github será necessário fazer um pull. Se der erro no merge, será necessário este comando. Depois disso pode dar o push |
 
 ## GIT CLONE: clonar um diretório. Copiar do github para um dir local
 > usar quando não se tem ainda um diretório local criado
