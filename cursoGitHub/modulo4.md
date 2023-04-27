@@ -5,9 +5,11 @@
 >> Pode ser feito via interface no Github ou via terminal
 
 ## ATUALIZAR O FORK: via terminal
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
-| `git remote add upstream [endereçodiretórioonline]` | primeiro sincronize com o diretório do projeto base, da outra pessoa |
+| `git remote -v` | verifica se já tem uma origem (seu repositório github) e um upstream (o repositório da outra pessoa) |
+| `git remote add upstream [endereçodiretórioonline]` | se não tiver um upstream, sincronize com o diretório do projeto base, da outra pessoa |
 | `git fecth upstream` | similar ao pull. Tem a função de pegar todos os commits do projeto base |
 | `git rebase upstream/master` | faz um rebalanceamento do que tem na upstream com a master. Permite a comparação entre os códigos |
 
