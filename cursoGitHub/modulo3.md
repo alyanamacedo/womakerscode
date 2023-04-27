@@ -9,6 +9,7 @@
 > É a principal. Contém os códigos de produção, disponibilizado para o público.
 
 # CRIANDO NOVA BRANCH
+
 |COMANDOS| DESCRIÇÃO |
 |--|--|
 | `git checkout -b [nomebranch` | cria nova branch e já faz o switch |
