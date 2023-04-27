@@ -8,7 +8,7 @@
 | `cd [nomedodiretorio]` | entra num diretório |
 | `code .` | se estiver pelo git, abre o VSC |
 | `git config --list` | lista as propriedades da conta |
-| [ESC] + `%:wq` | para sair do terminal |
+| [ESC] + `%:q` | para sair do terminal |
 | `clear` | limpa a tela |
 
 ## GIT INIT: inicializar o diretório
