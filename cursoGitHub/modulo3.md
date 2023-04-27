@@ -12,7 +12,7 @@
 
 |COMANDOS| DESCRIÇÃO |
 |--|--|
-| `git checkout -b [nomebranch` | cria nova branch e já faz o switch |
+| `git checkout -b [nomebranch]` | cria nova branch e já faz o switch |
 | `git branch` | lista as branchs existentes |
 | `git checkout [nomadabranch]` | vai para a branch |
 | `git merge [nomedabranch]`| na branch que se deseja carregar as atualizações de outra branch, informar de qual branch deseja fazer o merge|
