@@ -96,7 +96,7 @@
 | `git branch -u origin/master master` |  |
 | `git remote set-head origin -a` |  |
 
-  ### REFERÊNCIAS:
+ ### REFERÊNCIAS:
   
  - [Artigo] Guia rápido e Comandos básicos para iniciantes: https://dev.to/womakerscode/git-e-github-guia-rapido-e-comandos-basicos-para-iniciantes-4ile
  - [Tutorial] git commit -am: Atualizando arquivo modificado no Git: https://dev.to/womakerscode/tutorial-git-adicionando-um-arquivo-modificado-no-git-116c
