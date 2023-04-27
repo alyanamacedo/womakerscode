@@ -18,5 +18,15 @@
 | `git merge [nomedabranch]`| na branch que se deseja carregar as atualizações de outra branch, informar de qual branch deseja fazer o merge|
 | `git push` | não esquecer de dar o push depois do merge para atualizar no github |
 
+## RENOMEANDO A BRANCH
+> Como exemplo, renomeei a branch 'main' para 'master' via interface no GitHub. Em seguida, precisa atualizar via terminal
+
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git branch -m main master` |  |
+| `git fetch origin` |  |
+| `git branch -u origin/master master` |  |
+| `git remote set-head origin -a` |  |
+
 ### REFERÊNCIA
 - [Tutorial] O que são branches (ramos) no Git?: https://dev.to/womakerscode/tutorial-git-o-que-sao-branches-ramos-no-git-57pn
