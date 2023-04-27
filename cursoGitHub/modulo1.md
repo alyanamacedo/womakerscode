@@ -17,6 +17,7 @@
  - **Pull Request** -> após fazer o fork no repositório de outra pessoa, podemos resolver issues dele e fazer pull requests enviando soluções para erros e adicionando novos conteúdos. A pessoa dona do repositório irá avaliar a sua pull request e se estiver tudo ok, será mergeada no repositório master
 
 ## PRIMEIROS COMANDOS GIT
+
 |COMANDOS| DESCRIÇÃO |
 |--|--|
 | `git --version` | para saber a versão instalada |
