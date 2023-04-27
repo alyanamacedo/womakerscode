@@ -10,7 +10,7 @@
 |--|--|
 | `git remote -v` | verifica se já tem uma origem (seu repositório github) e um upstream (o repositório da outra pessoa) |
 | `git remote add upstream [endereçodiretórioonline]` | se não tiver um upstream, sincronize com o diretório do projeto base, da outra pessoa |
-| `git fecth upstream` | similar ao pull. Tem a função de pegar todos os commits do projeto base |
+| `git fecth upstream` | similar ao pull. Tem a função de pegar todos os commits do projeto base. Busca alterações |
 | `git rebase upstream/master` | faz um rebalanceamento do que tem na upstream com a master. Permite a comparação entre os códigos |
 
 ### REFERÊNCIAS
@@ -20,3 +20,5 @@
 - [Tutorial] Copiando um repositório existente (git clone): https://dev.to/womakerscode/tutorial-git-copiando-um-repositorio-existente-git-clone-1bfe
 
 - [Tutorial] Verificando commits remotos: https://dev.to/womakerscode/tutorial-git-verificando-commits-remotos-56f3
+
+- [Comandos Git] https://gist.github.com/leocomelli/2545add34e4fec21ec16
