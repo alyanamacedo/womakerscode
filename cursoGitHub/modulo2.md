@@ -12,6 +12,7 @@
 | `clear` | limpa a tela |
 
 ## GIT INIT: inicializar o diretório
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git init` | permite que o Git monitore tudo o que tem nesse repositório |
@@ -36,6 +37,7 @@
 | `git clone [enderecodiretorioonline]` | esse endereço o github informa na criação do dir https://github.com/alyanamacedo/[nomedorepositório] |
 
 ## GIT STATUS: verifica o status dos arquivos e pastas dentro do repositório
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git status` | ...sem alterações |
@@ -43,6 +45,7 @@
 | `git status` | ...com alterações |
 
 ## GIT ADD
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git add .` | adiciona todos os arquivos para a esteira de commit. Usar para adicionar novos arquivos, atualizar arquivo ou para identificar arquivos deletados |
@@ -50,6 +53,7 @@
 | `git add [caminhodoarquivo]` | arquivo específico |
  
 ## GIT COMMIT: de fato registrar as alterações feitas
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git add .` |  |
@@ -59,16 +63,17 @@
 | `git commit add .` | atalho para adicionar todas as mudanças. NÃO FUNCIONOU! |
 
 ## GIT PUSH: envio para o Github
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git push --set-upstream origin master` | Quando a branch é nova, não existe uma referência de-para entre os arquivos locais e virtuais, então precisa dar esse comando |
 | `git push` | para enviar do local para o github |
 
 ## GIT PULL: baixa as alteraçòes feitas no Github
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git pull` | para baixar do github para o local |
-|  |  |
 
   ### REFERÊNCIAS:
   
