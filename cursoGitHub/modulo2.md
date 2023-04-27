@@ -26,18 +26,15 @@
 |--|--|
 | `git init` | permite que o Git monitore tudo o que tem nesse repositório |
 | `git status` | verifica as modificações num nível mais macro
-| | |
 | `git add .`| adicione os arquivos do repositório local na fila do commit |
 | `git commit -m "[comentários]"` | confirme as alterações localmente |
-| | |
 | `git remote -v ` | para verificar se já existe algum diretório no GitHub atrelado |
 | `git remote add origin [enderecodiretorioonline]` | atrelar o diretório local a origem especificada no github |
 | `git remote set-url origin [enderecodiretorioonline]` | se por acaso digitou o endereço errado, use esse comando para alterar a origem |
-| | |
 | `git push --set-upstream origin master` | depois de dar o commit e definir a origem é hora de subir os arquivos para o github. Se for a primeira vez precisa definir o upstream origin [nomedabranch] |
 | `git pull origin master --allow-unrelated-histories` | se houver algum arquivo no github será necessário fazer um pull. Se der erro no merge, será necessário este comando. Depois disso pode dar o push |
 
-## GIT CLONE: clonar um diretório. Copiar do github para um dir local
+## GIT CLONE: clonar um diretório. Copiar do github para um diretório local
 > usar quando não se tem ainda um diretório local criado
 
 | COMANDOS | DESCRIÇÃO |
@@ -45,7 +42,7 @@
 | `cd ../` | retornar um diretório |
 | `mkdir [nomenovodir]` |  |
 | `cd [nomenovodir]` |  |
-| `git clone [enderecodiretorioonline]` | esse endereço o github informa na criação do dir https://github.com/alyanamacedo/[nomedorepositório] |
+| `git clone [enderecodiretorioonline]` | esse endereço o github informa na criação do dir https://github.com/[nomedousuário]/[nomedorepositório] |
 
 ## GIT STATUS: verifica o status dos arquivos e pastas dentro do repositório
 
@@ -85,6 +82,16 @@
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git pull` | para baixar do github para o local |
+
+## Renomeando a branch
+> Como exemplo, renomeei a branch 'main' para 'master' via interface no GitHub. Em seguida, precisa atualizar via terminal
+
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git branch -m main master` |  |
+| `git fetch origin` |  |
+| `git branch -u origin/master master` |  |
+| `git remote set-head origin -a` |  |
 
   ### REFERÊNCIAS:
   
