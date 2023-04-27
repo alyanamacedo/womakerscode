@@ -86,15 +86,6 @@
 |--|--|
 | `git pull` | para baixar do github para o local |
 
-## Renomeando a branch
-> Como exemplo, renomeei a branch 'main' para 'master' via interface no GitHub. Em seguida, precisa atualizar via terminal
-
-| COMANDOS | DESCRIÇÃO |
-|--|--|
-| `git branch -m main master` |  |
-| `git fetch origin` |  |
-| `git branch -u origin/master master` |  |
-| `git remote set-head origin -a` |  |
 
  ### REFERÊNCIAS:
   
