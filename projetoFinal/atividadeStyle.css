@@ -1,0 +1,330 @@
+:root{
+  --colorWhite: #F0F0F0;
+  --colorLightRed: #E38482;
+  --colorRed: #BF302C;
+  --colorDarkRed: #331212;
+  --colorDarkRedAlpha: #33121289;
+  --colorBlue: #1A28C2;
+  --colorDarkBlue: #121533;
+  --fontBody: 'Montserrat', sans-serif;
+  --fontTitle: 'Poiret One', cursive;
+}
+*{
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  font-family: var(--fontBody);
+  font-size: 1em;
+}
+html, body{
+  background-color: var(--colorWhite);
+  scroll-behavior: smooth;
+}
+h1, h2, h3{
+  font-family: var(--fontTitle);
+}
+
+/*BACKGROUNDS*/
+[class*="bgimg_"] {
+  position: relative;
+  /*opacity: 0.65;*/
+  background-position: center;
+  background-size: cover;
+  /*basta acrescentar as duas linhas a seguir para dar o efeito de parallax*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bgimg_1 {
+  background-image: url("images/Suzana-Herculano-Houzel-no-TED-.png");
+  height: 60em;
+}
+.bgimg_2 {
+  min-height: 400px;
+  background-color: var(--colorDarkRed);
+  background-image: url("images/bgWaves.svg");
+}  
+[class*="bgcolor_"] {
+  padding: 50px 80px;
+  text-align: justify;
+}
+.bgcolor_1 {
+  color: var(--colorDarkBlue);
+  background-color: var(--colorWhite);
+}
+.bgcolor_2 {
+  padding: 0 80px;
+  color: var(--colorWhite);
+  background-color: var(--colorDarkBlue);
+}
+
+/*MENU DE NAVEGAÇÃO*/
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.2em;
+  background-color: var(--colorWhite);
+}
+nav a {
+  display: block; /*precisa pois o <a> é inline por default*/
+  text-decoration: none;
+  color: var(--colorBlack);
+  height: 5em;
+  line-height: 5em; /*fará com que o texto centralize na vertical. Colocar mesmo valor do height*/
+  padding: 0 40px;
+  transition: 0.3s background-color, 0.3s color;
+}
+nav a:hover {
+  background-color: var(--colorRed);
+  color: var(--colorWhite);
+}
+nav a.active {
+  background-color: var(--colorDarkRed);
+  color: var(--colorWhite);
+  cursor: default;
+}
+
+/*INÍCIO-APRESENTAÇÃO*/
+section{
+  height: calc(100% - 6em);
+}
+.section_bg{
+  height: 100%;
+  width: 35%;
+  background-color: var(--colorDarkBlue);
+}
+.section_bg::after{
+  content: "";
+  position: absolute;
+  left: 15%;
+  height: calc(100% - 6em);
+  width: 40%;
+  background-color: var(--colorDarkBlue);
+  transform: skew(25deg);
+  /*transform-origin: top left;*/
+}
+.section_content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  margin: 0 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorWhite);
+}
+.section_content div{
+  align-self: flex-start;
+  display: inline-block;
+}
+.section_content_bar{
+  height: 7.5em;
+  width: 0.4em;
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+  background-color: var(--colorRed);
+}
+.section_content_name h1{
+  font-size: 6em;
+  line-height: 0.9em;
+  letter-spacing: 4px;
+}
+.section_content_name h2{
+  font-size: 2.5em;
+}
+.section_content h3{
+  font-size: 1em;
+  font-weight: 100;
+  align-self: flex-end;
+  margin: 10px 0 30px 0;
+}
+.section_content p{
+  line-height: 1.2em;
+}
+.section_content a {
+  height: 60px;
+  width: 200px;
+  align-self: flex-start;
+  line-height: 60px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: .1em;
+  color:  var(--colorRed);
+  border: 2px solid var(--colorRed);
+  text-decoration: none;
+  margin: 30px 0 0 0;
+  transition: 0.2s background-color, 0.2s color, 0.2s font-size;
+}
+.section_content a:hover{
+  background-color: var(--colorRed);
+  border: 2px solid var(--colorRed);
+  color: var(--colorWhite);
+  font-size: 1.1em;
+}
+
+/*BIOGRAPHY*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*SENTENCE*/
+.bgimg_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caption {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.caption span {
+  background-color: var(--colorDarkRed);
+  color: var(--colorWhite);
+  padding: 50px 15px;
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+}
+.caption p{
+  text-align: right;
+}
+
+/*FOOTER*/
+footer{
+  width: 100%;
+  background-color:  var(--colorDarkBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: var(--colorWhite);
+}
+.footer_back_top{
+  padding: 20px 0;
+}
+.footer_description{
+  width: 50%;
+  column-count: 2;
+  column-gap: 60px;
+  margin: 0 0 30px 0;
+}
+.footer_about{
+  display: flex;
+  gap: 20px;
+  padding: 12px 0;
+}
+.footer_about a {
+  transition: all 300ms;
+}
+.footer_about a:hover {
+  scale: 1.3;
+}
+.icone{
+  width: 24px;
+}
+.icone--texto{
+  margin: 0 8px;
+  animation: pulsar 1s infinite alternate;
+}
+@keyframes pulsar{
+  0%{
+      transform: scale(.8);
+  }
+  100%{
+      transform: scale(1.2);
+  }
+}

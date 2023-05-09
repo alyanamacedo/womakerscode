@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Descrição do site">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Alyana Macêdo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzana Herculano-Houzel</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Poiret+One&display=swap" rel="stylesheet">
+   <script src="javascript/script.js" defer></script>
+   <link rel="stylesheet" href="atividadeStyle.css">
+</head>
+<body>
+  <article id="start" class="bgimg_1">
+    <nav>
+      <ul>
+        <li><a class="btn active" href="#start">Início</a></li>
+        <li><a class="btn" href="#biography">Biografia</a></li>
+        <li><a class="btn" href="#books">Livros</a></li>
+      </ul>
+    </nav>
+    <section id="start">
+      <div class="section_bg"></div>
+        <div class="section_content">
+          <div>
+            <div class="section_content_bar"></div>
+            <div class="section_content_name">
+              <h1>Suzana</h1>
+              <h2>Herculano-Houzel</h2>
+            </div>
+          </div>
+          <h3>Rio de Janeiro, 1972</h3>
+          <p>Suzana é uma neurocientista, pesquisadora e professora universitária brasileira.
+          Divulgadora científica, Houzel escreve sobre neurociência, tendo livros publicados sobre o assunto. É professora associada da Universidade Vanderbilt, tendo sido professora associada da Universidade Federal do Rio de Janeiro (UFRJ). Foi a primeira brasileira a receber o Scholar Award da James S. McDonnell Foundation (JSMF), entidade internacional que financia pesquisas que melhoram a qualidade de vida da humanidade.
+          </p>
+          <a href="#biography" target="_self" alt="Saiba mais">Saiba mais</a>
+        </div>
+    </section>
+  </article>
+  <article id="biography" class="bgcolor_1">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/img_nature_wide.jpg" style="width:100%">
+        <div class="text">Biografia</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/img_snow_wide.jpg" style="width:100%">
+        <div class="text">Pesquisa</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/img_mountains_wide.jpg" style="width:100%">
+        <div class="text">Estados Unidos</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/images.jpg" style="width:100%">
+        <div class="text">Política</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+  </article>
+  <article id="sentence" class="bgimg_2">
+    <div class="caption">
+      <span>"Ciência inteligente não é aquela que resolve detalhes e fecha portas, mas a que abre novas questões e possibilidades."</span>
+      <p>Suzana Herculano-Houzel</p>
+    </div>
+  </article>
+  <article id="books" class="bgcolor_1">
+    <p>books</p>
+  </article>
+  <footer class="bgcolor_2">
+    <a href="#start" class="footer_back_top">
+      <img src="icons/arrowUp.svg" alt="Retorna para o início da página">
+   </a>
+    <p class="footer_description">
+      Página desenvolvida como projeto final do programa de imersão "Programação Web para Iniciantes", promovido pela WoMakers Code|Mais Mulhers em Tech, em parceria com a Microsoft, NTT Global Networks e Cursos rme & irme.
+      Tema e requisitos propostos pelo programa.
+    </p>
+    <span class="footer_made_by">Feito com <img class="ïcone icone--texto" src="icons/iconmonstr-heart-filled.svg" alt="carinho"> por Alyana Macêdo - 2023</span>
+    <div class="footer_about">
+      <a href="https://www.linkedin.com/in/alyanamacedo" target="_blank"> 
+         <img src="icons/linkedin.svg" alt="Link para o LinkedIn de Alyana Macêdo">
+      </a>
+      <a href="https://github.com/alyanamacedo" target="_blank">
+         <img src="icons/github.svg" alt="Link para o GitHub de Alyana Macêdo">
+      </a>   
+   </div>
+  </footer>
+</body>
+</html>
