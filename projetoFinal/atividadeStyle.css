@@ -2,8 +2,9 @@
   --colorWhite: #F0F0F0;
   --colorLightRed: #E38482;
   --colorRed: #BF302C;
+  --colorRedAlpha: #BF302C60;
   --colorDarkRed: #331212;
-  --colorDarkRedAlpha: #33121289;
+  --colorDarkRedAlpha: #33121260;
   --colorBlue: #1A28C2;
   --colorDarkBlue: #121533;
   --fontBody: 'Montserrat', sans-serif;
@@ -27,7 +28,6 @@ h1, h2, h3{
 /*BACKGROUNDS*/
 [class*="bgimg_"] {
   position: relative;
-  /*opacity: 0.65;*/
   background-position: center;
   background-size: cover;
   /*basta acrescentar as duas linhas a seguir para dar o efeito de parallax*/
@@ -41,7 +41,7 @@ h1, h2, h3{
 .bgimg_2 {
   min-height: 400px;
   background-color: var(--colorDarkRed);
-  background-image: url("images/bgWaves.svg");
+  background-image: url("images/josh-riemer-OH5BRdggi2w-unsplash.jpg");
 }  
 [class*="bgcolor_"] {
   padding: 50px 80px;
@@ -153,13 +153,14 @@ section{
 .section_content a {
   height: 60px;
   width: 200px;
+  background-color: var(--colorRedAlpha);
+  color:  var(--colorWhite);
+  border: 2px solid var(--colorRed);
   align-self: flex-start;
   line-height: 60px;
   text-align: center;
   font-weight: 600;
   letter-spacing: .1em;
-  color:  var(--colorRed);
-  border: 2px solid var(--colorRed);
   text-decoration: none;
   margin: 30px 0 0 0;
   transition: 0.2s background-color, 0.2s color, 0.2s font-size;
@@ -167,19 +168,17 @@ section{
 .section_content a:hover{
   background-color: var(--colorRed);
   border: 2px solid var(--colorRed);
-  color: var(--colorWhite);
   font-size: 1.1em;
 }
 
 /*BIOGRAPHY*/
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+  width: 100%;
+  height: 565px;
   position: relative;
   margin: auto;
 }
-
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -187,46 +186,21 @@ section{
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: var(--colorDarkRed);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: var(--colorDarkRed);
+  color: var(--colorWhite);
 }
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -237,26 +211,54 @@ section{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+/*content*/
+.mySlides{
+  height: 100%;
+}
+.mySlides_title {
+  color: var(--colorDarkBlue);
+  font-size: 2em;
+  line-height: 3em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+.mySlides_content{
+  height: calc(100% - 6em);
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mySlides_content img{
+  height: 70%;
+}
+.mySlides_content_text{
+  width: 50%;
+  text-indent: 20px;
+}
+.mySlides_content ul{
+  width: 80%;
+}
+.mySlides_content ul li{
+  margin: 10px 0;
+}
+
 
 /*SENTENCE*/
 .bgimg_2{
@@ -268,10 +270,10 @@ section{
   width: 50%;
   display: flex;
   flex-direction: column;
+  color: var(--colorWhite);
 }
 .caption span {
   background-color: var(--colorDarkRed);
-  color: var(--colorWhite);
   padding: 50px 15px;
   font-size: 25px;
   text-align: center;
@@ -280,6 +282,26 @@ section{
 .caption p{
   text-align: right;
 }
+
+/*BOOKS*/
+#books h1{
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.books_container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.books_container div img{
+  width: 227px;
+  height: 346px;
+  margin: 30px;
+}
+
 
 /*FOOTER*/
 footer{
