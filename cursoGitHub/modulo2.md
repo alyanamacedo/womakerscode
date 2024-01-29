@@ -37,6 +37,16 @@
 | `git push --set-upstream origin master` | depois de dar o commit e definir a origem é hora de subir os arquivos para o github. Se for a primeira vez precisa definir o upstream origin [nomedabranch] |
 | `git pull origin master --allow-unrelated-histories` | se houver algum arquivo no github será necessário fazer um pull. Se der erro no merge, será necessário este comando. Depois disso pode dar o push |
 
+## GIT REMOTE: alterando caminho do diretório no github atrelado ao diretório local
+> usar se o endereço do diretório do repositório no github mudar
+
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git remote -v ` | para verificar a origin e upstream atuais |
+| `git remote remove origin ` | deleta a origin junto com o upstream |
+| `git remote add origin [enderecodiretorioonline] ` | atrela nova origin |
+| `git push --set-upstream origin master ` | conecta com a branch master daquela origin |
+
 ## GIT CLONE: clonar um diretório. Copiar do github para um diretório local
 > usar quando não se tem ainda um diretório local criado
 
