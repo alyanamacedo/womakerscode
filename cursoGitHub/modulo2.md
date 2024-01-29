@@ -26,6 +26,7 @@
 
 > Puxando de um repositório já existente
 
+|--|--|
 | `git remote add origin [enderecodiretorioonline]` |  |
 | `git branch -M main` |  |
 | `git push -u origin main` |  |
