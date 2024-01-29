@@ -13,6 +13,7 @@
 
 > Criando novo repositório por linha de comando
 > primeiro crie um diretório no GitHub -> ele vai mostrar um comando remote add origin https://github.com/[nomedousuário]/[nomedorepositório]
+
 |COMANDOS| DESCRIÇÃO |
 |--|--|
 | `echo "# ntsl" >> README.md` | cria uma documento md novo |
@@ -22,7 +23,9 @@
 | `git branch -M main` |  |
 | `git remote add origin [enderecodiretorioonline]` |  |
 | `git push -u origin main` |  |
+
 > Puxando de um repositório já existente
+
 | `git remote add origin [enderecodiretorioonline]` |  |
 | `git branch -M main` |  |
 | `git push -u origin main` |  |
