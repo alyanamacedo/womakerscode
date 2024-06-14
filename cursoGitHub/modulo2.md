@@ -57,6 +57,7 @@
 | `git push --set-upstream origin master` | depois de dar o commit e definir a origem é hora de subir os arquivos para o github. Se for a primeira vez precisa definir o upstream origin [nomedabranch] |
 
 > Atualizando somente o diretório local. Seguir os passos anteriores e...
+
 | COMANDOS | DESCRIÇÃO |
 |--|--|
 | `git push --set-upstream origin master` | depois de dar o commit e definir a origem é hora de subir os arquivos para o github. Se for a primeira vez precisa definir o upstream origin [nomedabranch] |
