@@ -57,6 +57,8 @@
 | `git push --set-upstream origin master` | depois de dar o commit e definir a origem é hora de subir os arquivos para o github. Se for a primeira vez precisa definir o upstream origin [nomedabranch] |
 
 > Atualizando somente o diretório local. Seguir os passos anteriores e...
+| COMANDOS | DESCRIÇÃO |
+|--|--|
 | `git push --set-upstream origin master` | depois de dar o commit e definir a origem é hora de subir os arquivos para o github. Se for a primeira vez precisa definir o upstream origin [nomedabranch] |
 | `git pull origin master --allow-unrelated-histories` | se houver algum arquivo no github será necessário fazer um pull. Se der erro no merge, será necessário este comando. Depois disso pode dar o push |
 | `git push origin master --force` | se rejeitar o 'git push --set-upstream origin master' (non-fast-forward) |
