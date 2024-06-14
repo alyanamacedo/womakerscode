@@ -39,7 +39,7 @@
 | `git init` | permite que o Git monitore tudo o que tem nesse repositório |
 | `git status` | verifica as modificações num nível mais macro
  
-## GIT REMOTE: linkando o diretório local com um diretório no GitHub novo
+## GIT REMOTE: linkando o diretório local com um diretório no GitHub
 > primeiro crie um diretório no GitHub -> ele vai mostrar um comando remote add origin https://github.com/[nomedousuário]/[nomedorepositório]
 > esse link é a referência [enderecodiretorioonline]
 
@@ -54,9 +54,13 @@
 | `git remote -v ` | para verificar se já existe algum diretório no GitHub atrelado |
 | `git remote add origin [enderecodiretorioonline]` | atrelar o diretório local a origem especificada no github |
 | `git remote set-url origin [enderecodiretorioonline]` | se por acaso digitou o endereço errado, use esse comando para alterar a origem |
-|  |  |
+| `git push --set-upstream origin master` | depois de dar o commit e definir a origem é hora de subir os arquivos para o github. Se for a primeira vez precisa definir o upstream origin [nomedabranch] |
+
+> Atualizando somente o diretório local. Seguir os passos anteriores e...
 | `git push --set-upstream origin master` | depois de dar o commit e definir a origem é hora de subir os arquivos para o github. Se for a primeira vez precisa definir o upstream origin [nomedabranch] |
 | `git pull origin master --allow-unrelated-histories` | se houver algum arquivo no github será necessário fazer um pull. Se der erro no merge, será necessário este comando. Depois disso pode dar o push |
+| `git push origin master --force` | se rejeitar o 'git push --set-upstream origin master' (non-fast-forward) |
+
 
 ## GIT REMOTE: alterando caminho do diretório no github atrelado ao diretório local
 > usar se o endereço do diretório do repositório no github mudar
