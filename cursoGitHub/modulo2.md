@@ -92,6 +92,14 @@
 | `git add .` | depois que fizer alguma alteração local |
 | `git status` | ...com alterações |
 
+## GIT RESET: caso algum arquivo local tenha sido deletado e dê erro ao sincronizar
+
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git status` | Ex de resposta: Your branch is ahead of 'origin/main' by 2 commits |
+| `git reset HEAD~2` | utilizar o mesmo número retornado no git status |
+| `git status` | Deve retornar: Your branch is up to date with 'origin/main'. |
+
 ## GIT ADD
 
 | COMANDOS | DESCRIÇÃO |
