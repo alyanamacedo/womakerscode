@@ -153,5 +153,33 @@
       </a>   
    </div>
   </footer>
+
+  <script>
+// ScrollSpy para menu ativo
+window.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('article[id]');
+  const navLinks = document.querySelectorAll('.navbar__menu a, nav ul a');
+
+  function onScroll() {
+    let scrollPos = window.scrollY || window.pageYOffset;
+    let offset = 100; // ajuste para altura do menu
+    let currentId = '';
+    sections.forEach(section => {
+      if (section.offsetTop - offset <= scrollPos) {
+        currentId = section.id;
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + currentId) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll);
+  onScroll(); // inicializa
+});
+</script>
 </body>
 </html>
