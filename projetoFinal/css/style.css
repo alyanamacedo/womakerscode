@@ -58,19 +58,55 @@ h1, h2, h3{
 }
 
 /*MENU DE NAVEGAÇÃO*/
-nav{
+.navbar{
   position: sticky;
   top: 0;
   z-index: 1;
+  background: var(--colorWhite);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5em;
 }
-nav ul {
+.navbar__brand {
+  font-family: var(--fontTitle);
+  font-size: 1.3em;
+  color: var(--colorDarkRed);
+  padding: 0.5em 0;
+  letter-spacing: 2px;
+  flex-shrink: 0;
+}
+.navbar__toggle {
+  display: none;
+}
+.navbar__icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+.navbar__icon span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--colorDarkRed);
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.navbar__menu {
   display: flex;
   justify-content: center;
   list-style: none;
   font-size: 1.2em;
   background-color: var(--colorWhite);
 }
-nav a {
+.navbar__menu li a {
   display: block; /*precisa pois o <a> é inline por default*/
   text-decoration: none;
   color: var(--colorBlack);
@@ -79,14 +115,57 @@ nav a {
   padding: 0 40px;
   transition: 0.3s background-color, 0.3s color;
 }
-nav a:hover {
+.navbar__menu li a:hover {
   background-color: var(--colorRed);
   color: var(--colorWhite);
 }
-nav a.active {
+.navbar__menu li a.active {
   background-color: var(--colorDarkRed);
   color: var(--colorWhite);
   cursor: default;
+}
+/* TABLET */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    padding: 0 1.5em;
+  }
+  .navbar__brand {
+    font-size: 1.1em;
+    padding-left: 0.5em;
+  }
+  .navbar__menu {
+    margin-left: auto;
+  }
+}
+/* MOBILE: menu hamburguer */
+@media (max-width: 700px) {
+  .navbar__icon {
+    display: flex;
+  }
+  .navbar__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--colorWhite);
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+  .navbar__menu li a {
+    width: 100vw;
+    height: 3em;
+    line-height: 3em;
+    padding: 0 1.2em;
+    font-size: 1em;
+  }
+  .navbar__toggle:checked ~ .navbar__menu {
+    max-height: 300px;
+    transition: max-height 0.5s;
+  }
 }
 
 /*INÍCIO-APRESENTAÇÃO*/
