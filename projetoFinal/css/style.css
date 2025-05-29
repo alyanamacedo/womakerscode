@@ -99,6 +99,10 @@ h1, h2, h3{
   border-radius: 2px;
   transition: 0.3s;
 }
+.navbar__icon:focus {
+  outline: 2px solid var(--colorDarkRed);
+  outline-offset: 2px;
+}
 .navbar__menu {
   display: flex;
   justify-content: center;
@@ -123,6 +127,10 @@ h1, h2, h3{
   background-color: var(--colorDarkRed);
   color: var(--colorWhite);
   cursor: default;
+}
+.navbar__menu li a:focus {
+  outline: 2px solid var(--colorDarkRed);
+  outline-offset: 2px;
 }
 /* TABLET */
 @media (max-width: 1024px) {

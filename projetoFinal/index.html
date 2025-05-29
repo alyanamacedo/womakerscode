@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Descrição do site">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Página sobre Suzana Herculano-Houzel, neurocientista brasileira, com biografia, descobertas e livros.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Suzana Herculano-Houzel, neurociência, biografia, livros">
     <meta name="author" content="Alyana Macêdo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suzana Herculano-Houzel</title>
@@ -16,28 +16,28 @@
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <article id="start" class="bgimg_1">
-    <nav class="navbar">
+  <article id="start" class="bgimg_1" aria-label="Início da página">
+    <nav class="navbar" aria-label="Menu principal">
       <div class="navbar__brand">Suzana Herculano-Houzel</div>
-      <input type="checkbox" id="navbar-toggle" class="navbar__toggle" />
-      <label for="navbar-toggle" class="navbar__icon" aria-label="Abrir menu">
+      <input type="checkbox" id="navbar-toggle" class="navbar__toggle" aria-label="Abrir menu de navegação" />
+      <label for="navbar-toggle" class="navbar__icon" aria-label="Abrir menu" tabindex="0" role="button" aria-controls="menu-list" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </label>
-      <ul class="navbar__menu">
-        <li><a class="btn active" href="#start">Início</a></li>
-        <li><a class="btn" href="#biography">Biografia</a></li>
-        <li><a class="btn" href="#books">Livros</a></li>
+      <ul class="navbar__menu" id="menu-list" role="menubar">
+        <li role="none"><a class="btn active" href="#start" role="menuitem" tabindex="0">Início</a></li>
+        <li role="none"><a class="btn" href="#biography" role="menuitem" tabindex="0">Biografia</a></li>
+        <li role="none"><a class="btn" href="#books" role="menuitem" tabindex="0">Livros</a></li>
       </ul>
     </nav>
-    <section id="start">
-      <div class="section_bg"></div>
+    <section id="start" aria-labelledby="titulo-inicio">
+      <div class="section_bg" aria-hidden="true"></div>
         <div class="section_content">
           <div>
-            <div class="section_content_bar"></div>
+            <div class="section_content_bar" aria-hidden="true"></div>
             <div class="section_content_name">
-              <h1>Suzana</h1>
+              <h1 id="titulo-inicio">Suzana</h1>
               <h2>Herculano-Houzel</h2>
             </div>
           </div>
@@ -45,17 +45,17 @@
           <p>Suzana é uma neurocientista, pesquisadora e professora universitária brasileira.
           Divulgadora científica, Houzel escreve sobre neurociência, tendo livros publicados sobre o assunto. É professora associada da Universidade Vanderbilt, tendo sido professora associada da Universidade Federal do Rio de Janeiro (UFRJ). Foi a primeira brasileira a receber o Scholar Award da James S. McDonnell Foundation (JSMF), entidade internacional que financia pesquisas que melhoram a qualidade de vida da humanidade.
           </p>
-          <a href="#biography" target="_self" alt="Saiba mais">Saiba mais</a>
+          <a href="#biography" target="_self" aria-label="Saiba mais sobre Suzana Herculano-Houzel">Saiba mais</a>
         </div>
     </section>
   </article>
 
-  <article id="biography" class="bgcolor_1">
-    <div class="slideshow-container">
-      <div class="mySlides fade">
+  <article id="biography" class="bgcolor_1" aria-label="Biografia de Suzana Herculano-Houzel">
+    <div class="slideshow-container" aria-roledescription="carrossel" aria-label="Carrossel de biografia e descobertas">
+      <div class="mySlides fade" aria-label="Slide Biografia">
         <h1 class="mySlides_title">Biografia</h1>
         <div class="mySlides_content">
-          <div class="mySlides_content_img"><img src="images/perfil.jpg" alt="Foto de Suzana Herculano-Houzel"></div>
+          <div class="mySlides_content_img"><img src="images/perfil.jpg" alt="Retrato de Suzana Herculano-Houzel sorrindo, fundo claro" /></div>
           <div class="mySlides_content_text">
             <p>Houzel nasceu no Rio de Janeiro, em 1972. Formou-se em biologia, com ênfase em genética, pela Universidade Federal do Rio de Janeiro, em 1992. No mesmo ano ingressou no mestrado em neurociência pela Case Western Reserve University, em Cleveland. Defendeu o doutorado na mesma área pela Universidade Pierre e Marie Curie, em Paris. Em 1999, fez estágio de pós-doutorado pelo Instituto Max Planck, na Alemanha.</p>
             <p>Em 1999 voltou ao Brasil, onde passou a dedicar-se à divulgação científica, além da pesquisa acadêmica, lançando também o site Cérebro Nosso de Cada Dia. Entre 1999 e 2002 foi pesquisadora visitante da Fundação Oswaldo Cruz. Em 2001, entrou na UFRJ como professora adjunta, onde dirigiu o Laboratório de Neuroanatomia Comparada do Instituto de Ciências Biomédicas, tendo liderado uma equipe com colaboradores em vários países e pesquisando as regras de construção do sistema nervoso central em humanos e outras espécies.</p>
@@ -63,7 +63,7 @@
           </div>
         </div>
       </div> 
-      <div class="mySlides fade">
+      <div class="mySlides fade" aria-label="Slide Pesquisa">
         <h1 class="mySlides_title">Pesquisa</h1>
         <div class="mySlides_content">
           <div class="mySlides_content_text">
@@ -72,19 +72,18 @@
             <p>Devido às difíceis condições de realizar sua pesquisa científica numa universidade pública e sem conseguir financiar seu laboratório, Houzel aceitou uma posição de pesquisadora associada na Universidade Vanderbilt desde maio de 2016, onde trabalha com as regras de construção do sistema nervoso central em humanos e outras espécies.</p>
             <p>Em 2013 foi a primeira brasileira a participar da conferência TED Global. É também membro do corpo editorial da Revista Neurociências, da revista, e colaboradora de Jorge Zahar Editor.</p>
           </div>
-          <div class="mySlides_content_img"><img src="images/images.jpg" alt="Suzana em laboratório"></div>
+          <div class="mySlides_content_img"><img src="images/images.jpg" alt="Suzana Herculano-Houzel em laboratório, usando jaleco branco, ao lado de equipamentos científicos" /></div>
         </div>
       </div> 
-      <div class="mySlides fade">
+      <div class="mySlides fade" aria-label="Slide Palestra TED">
         <h1 class="mySlides_title">Palestra</h1>
         <div class="mySlides_content">
           <div class="mySlides_content_text" style="width:100%;max-width:100%;">
-            <iframe src="https://embed.ted.com/talks/lang/pt/suzana_herculano_houzel_what_is_so_special_about_the_human_brain" width="100%" height="320" style="border-radius:10px;min-width:200px;max-width:100%;" frameborder="0" scrolling="no" allowfullscreen title="TED Suzana Herculano-Houzel"></iframe>
+            <iframe src="https://embed.ted.com/talks/lang/pt/suzana_herculano_houzel_what_is_so_special_about_the_human_brain" width="100%" height="320" style="border-radius:10px;min-width:200px;max-width:100%;" frameborder="0" scrolling="no" allowfullscreen title="Palestra TED Suzana Herculano-Houzel: O que há de especial no cérebro humano" aria-label="Vídeo da palestra TED de Suzana Herculano-Houzel"></iframe>
           </div>
         </div>
       </div>
-
-      <div class="mySlides fade">
+      <div class="mySlides fade" aria-label="Slide Descobertas">
         <h1 class="mySlides_title">Descobertas</h1>
         <div class="mySlides_content">
           <div class="mySlides_content_text" style="width:100%;max-width:100%;">
@@ -100,56 +99,53 @@
           </div>
         </div>
       </div>
-      
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-      
-      </div>
-      <br>
-      
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span> 
-      </div>
+      <a class="prev" onclick="plusSlides(-1)" aria-label="Slide anterior">❮</a>
+      <a class="next" onclick="plusSlides(1)" aria-label="Próximo slide">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)" tabindex="0" aria-label="Ir para o slide 1"></span> 
+      <span class="dot" onclick="currentSlide(2)" tabindex="0" aria-label="Ir para o slide 2"></span> 
+      <span class="dot" onclick="currentSlide(3)" tabindex="0" aria-label="Ir para o slide 3"></span>
+      <span class="dot" onclick="currentSlide(4)" tabindex="0" aria-label="Ir para o slide 4"></span> 
+    </div>
   </article>
 
-  <article id="sentence" class="bgimg_2">
+  <article id="sentence" class="bgimg_2" aria-label="Citação de Suzana Herculano-Houzel">
     <div class="caption">
       <span>"Ciência inteligente não é aquela que resolve detalhes e fecha portas, mas a que abre novas questões e possibilidades."</span>
       <p>Suzana Herculano-Houzel</p>
     </div>
   </article>
 
-  <article id="books" class="bgcolor_1">
+  <article id="books" class="bgcolor_1" aria-label="Livros publicados por Suzana Herculano-Houzel">
     <h1>LIVROS PUBLICADOS</h1>
     <div class="books_container">
-      <div><img src="images/OCerebroNosso.jpg" alt="O Cérebro Nosso de Cada Dia (2005)"></div>
-      <div><img src="images/OCerebroeosPrazeres.jpg" alt="Sexo, Drogas, Rock and Roll... & Chocolate (2012)"></div>
-      <div><img src="images/OCerebroAdolescente.jpg" alt="O cérebro adolescente: A neurociência da transformação da criança em adulto (2155)"></div>
-      <div><img src="images/Bocejo.jpg" alt="Por que o Bocejo é Contagioso? (2007)"></div>
-      <div><img src="images/FiquedeBem.jpg" alt="Fique de bem com seu Cérebro (2007)"></div>
-      <div><img src="images/PílulasdeNeurociência.jpg" alt="Pílulas de Neurociência para uma Vida Melhor (2009)"></div>
-      <div><img src="images/AVantagemHumana.jpg" alt="A vantagem Humana (2017)"></div>
+      <div><img src="images/OCerebroNosso.jpg" alt="Capa do livro O Cérebro Nosso de Cada Dia (2005), de Suzana Herculano-Houzel" /></div>
+      <div><img src="images/OCerebroeosPrazeres.jpg" alt="Capa do livro Sexo, Drogas, Rock and Roll... & Chocolate (2012), de Suzana Herculano-Houzel" /></div>
+      <div><img src="images/OCerebroAdolescente.jpg" alt="Capa do livro O cérebro adolescente: A neurociência da transformação da criança em adulto (2155), de Suzana Herculano-Houzel" /></div>
+      <div><img src="images/Bocejo.jpg" alt="Capa do livro Por que o Bocejo é Contagioso? (2007), de Suzana Herculano-Houzel" /></div>
+      <div><img src="images/FiquedeBem.jpg" alt="Capa do livro Fique de bem com seu Cérebro (2007), de Suzana Herculano-Houzel" /></div>
+      <div><img src="images/PílulasdeNeurociência.jpg" alt="Capa do livro Pílulas de Neurociência para uma Vida Melhor (2009), de Suzana Herculano-Houzel" /></div>
+      <div><img src="images/AVantagemHumana.jpg" alt="Capa do livro A vantagem Humana (2017), de Suzana Herculano-Houzel" /></div>
     </div>
   </article>
 
-  <footer class="bgcolor_2">
-    <a href="#start" class="footer_back_top">
-      <img src="icons/arrowUp.svg" alt="Retorna para o início da página">
+  <footer class="bgcolor_2" aria-label="Rodapé">
+    <a href="#start" class="footer_back_top" aria-label="Voltar para o início da página">
+      <img src="icons/arrowUp.svg" alt="Seta para cima, volta ao início da página" />
    </a>
     <p class="footer_description">
       Página desenvolvida como projeto final do programa de imersão "Programação Web para Iniciantes", promovido pela WoMakers Code|Mais Mulhers em Tech, em parceria com a Microsoft, NTT Global Networks e Cursos rme & irme.
       Tema e requisitos propostos pelo programa.
     </p>
-    <span class="footer_made_by">Feito com <img class="ïcone icone--texto" src="icons/iconmonstr-heart-filled.svg" alt="carinho"> por Alyana Macêdo - 2023</span>
+    <span class="footer_made_by">Feito com <img class="ïcone icone--texto" src="icons/iconmonstr-heart-filled.svg" alt="ícone de coração, feito com carinho" /> por Alyana Macêdo - 2023</span>
     <div class="footer_about">
-      <a href="https://www.linkedin.com/in/alyanamacedo" target="_blank"> 
-         <img src="icons/linkedin.svg" alt="Link para o LinkedIn de Alyana Macêdo">
+      <a href="https://www.linkedin.com/in/alyanamacedo" target="_blank" aria-label="LinkedIn de Alyana Macêdo"> 
+         <img src="icons/linkedin.svg" alt="Ícone do LinkedIn" />
       </a>
-      <a href="https://github.com/alyanamacedo" target="_blank">
-         <img src="icons/github.svg" alt="Link para o GitHub de Alyana Macêdo">
+      <a href="https://github.com/alyanamacedo" target="_blank" aria-label="GitHub de Alyana Macêdo">
+         <img src="icons/github.svg" alt="Ícone do GitHub" />
       </a>   
    </div>
   </footer>
