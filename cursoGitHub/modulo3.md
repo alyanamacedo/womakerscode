@@ -8,7 +8,7 @@
 ## MASTER (PRD)
 > É a principal. Contém os códigos de produção, disponibilizado para o público.
 
-# CRIANDO NOVA BRANCH
+## CRIANDO NOVA BRANCH
 
 |COMANDOS| DESCRIÇÃO |
 |--|--|
@@ -27,6 +27,18 @@
 | `git fetch origin` |  |
 | `git branch -u origin/master master` |  |
 | `git remote set-head origin -a` |  |
+
+## LIMPANDO OS COMMITS DA BRANCH
+> Quando dá algum erro no push por algum commit do passado, melhor limpar o histórico
+
+| COMANDOS | DESCRIÇÃO |
+|--|--|
+| `git checkout --orphan nova-main` | crie um novo branch órfão (sem histórico) |
+| `git add .` | adicione todos os arquivos |
+| `git commit -m "Novo início do histórico"` | faça um novo commit inicial |
+| `git branch -D main` | apague o branch antigo |
+| `git branch -m main` | renomeie a nova branch |
+| `git push -f origin main` | Forçe o push para o repositório remoto (isso sobrescreve o histórico remoto!) |
 
 ### REFERÊNCIA
 - [Tutorial] O que são branches (ramos) no Git?: https://dev.to/womakerscode/tutorial-git-o-que-sao-branches-ramos-no-git-57pn
