@@ -60,6 +60,7 @@
 
 | COMANDOS | DESCRIÇÃO |
 |--|--|
+| `git pull [enderecodiretorioonline] master` | se houver algum arquivo no github será necessário fazer um pull |
 | `git pull origin master --allow-unrelated-histories` | se houver algum arquivo no github será necessário fazer um pull. Se der erro no merge, será necessário este comando. Depois disso pode dar o push |
 | `git push origin master --force` | se rejeitar o 'git push --set-upstream origin master' (non-fast-forward) |
 
