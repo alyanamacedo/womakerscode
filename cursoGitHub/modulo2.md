@@ -100,6 +100,9 @@
 | `git status` | Ex de resposta: Your branch is ahead of 'origin/main' by 2 commits |
 | `git reset HEAD~2` | utilizar o mesmo número retornado no git status |
 | `git status` | Deve retornar: Your branch is up to date with 'origin/main'. |
+| `git reset --soft` | desfaz commit. Mantém as alterações dos commits "removidos" |
+| `git reset --mixed` | desfaz commit. (padrão) remove as alterações da área de stage, mas mantém as alterações no seu diretório de trabalho |
+| `git reset --hard` | desfaz commit. Descarta todas as alterações, tanto da área de stage quanto do diretório de trabalho |
 
 ## GIT ADD
 
@@ -116,6 +119,7 @@
 | `git add .` |  |
 | `git status` |  |
 | `git commit -m "comentários"` | branch master. [master (root-commit) 6eb5936] Esse número é um código gerado |
+| `git commit --amend -m "comentários"` | para alterar a mensagem do último commit |
 | `git commit -a` | não precisa entrar com comentários |
 | `git commit add .` | atalho para adicionar todas as mudanças. NÃO FUNCIONOU! |
 
