@@ -22,6 +22,7 @@
 |--|--|
 | `git --version` | para saber a versão instalada |
 | `git config --global user.name "[nome]"` | para configurar a conta do GitHub no computador |
-| `git config --global user.email "[endereco-de-email]"`| para configurar a conta do GitHub no computador |
+| `git config --global user.email "[endereco-de-email]"` | para configurar a conta do GitHub no computador |
+| `git config --global init.defaultBranch main` | para configurar o nome da Branch padrão |
 | `git config --list` | lista as propriedades da conta |
 | `clear` | para limpar a tela |
