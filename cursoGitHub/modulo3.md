@@ -36,9 +36,11 @@
 | `git checkout --orphan nova-main` | crie um novo branch órfão (sem histórico) |
 | `git add .` | adicione todos os arquivos |
 | `git commit -m "Novo início do histórico"` | faça um novo commit inicial |
-| `git branch -D main` | apague o branch antigo |
+| `git branch -d main` | apague o branch antigo. Seguro (só apaga branch já mesclado) |
+| `git branch -D main` | apague o branch antigo. Força (apaga de qualquer jeito, pode perder histórico) |
 | `git branch -m main` | renomeie a nova branch |
 | `git push -f origin main` | Forçe o push para o repositório remoto (isso sobrescreve o histórico remoto!) |
+| `git branch -v` | ver o último commit de cada Branch |
 
 ### REFERÊNCIA
 - [Tutorial] O que são branches (ramos) no Git?: https://dev.to/womakerscode/tutorial-git-o-que-sao-branches-ramos-no-git-57pn
